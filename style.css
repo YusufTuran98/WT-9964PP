@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.playstore{
+    width: 150px;
+    margin: 5px;
+}
+
+#phone-1{
+    height: 500px;
+    width: 250px; 
+    position: absolute; 
+    z-index: 5;
+
+
+
+}
+
+
+
+
+
+
+
+
+.img-phone-1{
+    max-width: 200px;
+}
+
+
+
+@media (min-width:768px)  {
+    
+
+.circle::before{
+    content: "✘";
+    position: absolute;
+    color: blue;
+    font-size: 28px;
+    left: 0;
+    bottom: 0;
+    transform: rotate(-45deg);
+    display: none;
+} 
+}
+
+@media (min-width:992px) {
+    .circle::before{
+        content: "✘";
+        position: absolute;
+        color: blue;
+        font-size: 28px;
+        left: 0;
+        bottom: 0;
+        transform: rotate(-45deg);
+        display: block;
+    } 
+
+    
+}
+
+
+
+@media (min-width:100px) {
+    .circle::after{
+        content: "◉";
+        position: absolute;
+        color: blue;
+        font-size: 28px;
+        right: 0;
+        top: 0;
+        transform: rotate(45deg);
+        display: none;
+        max-width: 768px;
+       }
+    
+}
+
+@media (min-width:992px){
+
+    .circle::after{
+        content: "◉";
+        position: absolute;
+        color: blue;
+        font-size: 28px;
+        right: 0;
+        top: 0;
+        transform: rotate(45deg);
+        display: block;
+       }
+
+}
+
+
+.circle::after{
+    content: "◉";
+    position: absolute;
+    color: blue;
+    font-size: 28px;
+    right: 0;
+    top: 0;
+    transform: rotate(45deg);   }
+
+    .purple-icon{
+        color: blueviolet;  }
+        .circle{
+            content: "";
+            width: 375px;
+            height: 375px;
+            background: linear-gradient(90deg, rgba(58,61,180,1) 0%, rgba(65,29,253,1) 26%, rgba(209,69,252,1) 100%);
+            border-radius: 500px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: relative;  }
+
+
+
+    .bg-testimonial{
+        background: linear-gradient(90deg, rgba(58,61,180,1) 0%, rgba(65,29,253,1) 26%, rgba(209,69,252,1) 100%);
+    }
+    
+
+
+ #bgg-start{
+
+    position: relative;
+    width: 100%;
+    height: 700px;
+ }
+
+ .main-bg{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background-image: url(/walking-on-galaxy-4k_1540755847.jpg.webp);
+    background-position: center;
+    background-size: cover ;
+ }
+
+ #footer{
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+ }
